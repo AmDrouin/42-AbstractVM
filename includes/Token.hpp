@@ -8,16 +8,22 @@
  * The lexer only classifies words: the parser is responsible for checking 
  */
 enum eTokenType{
-    WORD,
-    P_OPEN,
-    P_CLOSE,
-    INTEGER,
-    DECIMAL,
-    NEW_LINE,
-    END
+    WORD,           //type name like push or int32
+    P_OPEN,         //"("
+    P_CLOSE,        //")"
+    INTEGER,        //[0-9]
+    DECIMAL,        //
+    NEW_LINE,       //
+    END             //
 };
 
-
+/**
+ * @class Token
+ * @brief Lexical united produced by the lexer
+ * 
+ * A token holds a category (eTokenType), the text as it appears in the source
+ * and the line number where it was read
+ */
 class Token {
     public:
         //Canonical form
