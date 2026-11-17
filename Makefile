@@ -5,7 +5,8 @@ NAME = avm
 
 SRC = 	sources/main.cpp\
 		sources/Token.cpp \
-		sources/Lexer.cpp
+		sources/Lexer.cpp \
+		sources/Exception.cpp
 
 #-----------------------------------------#
 # Objects
