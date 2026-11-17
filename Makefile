@@ -4,7 +4,8 @@ NAME = avm
 # Sources
 
 SRC = 	sources/main.cpp\
-		sources/Token.cpp
+		sources/Token.cpp \
+		sources/Lexer.cpp
 
 #-----------------------------------------#
 # Objects
@@ -18,7 +19,7 @@ DEP = $(OBJ:.o=.d)
 # Compiler
 
 CXX = c++
-CXXFLAGS = -g -Wall -Wextra -Werror -MMD -MP -std=c++11
+CXXFLAGS = -g -Wall -Wextra -Werror -MMD -MP -std=c++20
 INC = -I./includes
 
 
